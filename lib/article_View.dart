@@ -76,18 +76,18 @@ class articleview extends StatefulWidget {
 
 class _articleviewState extends State<articleview> {
   final Completer<WebViewController> completer = Completer<WebViewController>();
-  num position = 1;
+  bool position = true;
 
   final key = UniqueKey();
   doneLoading(String A) {
     setState(() {
-      position = 0;
+      position = false;
     });
   }
 
   startLoading(String A) {
     setState(() {
-      position = 1;
+      position = true;
     });
   }
 
@@ -145,24 +145,23 @@ class _articleviewState extends State<articleview> {
             ),
           ),
           SizedBox(
-            height: 8,
+            height: 3,
+            child: position
+                ? LinearProgressIndicator(
+                    valueColor: new AlwaysStoppedAnimation<Color>(Colors.red),
+                  )
+                : null,
           ),
           Expanded(
-            child: IndexedStack(index: position, children: <Widget>[
-              WebView(
-                  key: key,
-                  onPageFinished: doneLoading,
-                  onPageStarted: startLoading,
-                  javascriptMode: JavascriptMode.unrestricted,
-                  initialUrl: widget.blogurl,
-                  onWebViewCreated: (WebViewController webviewcontroller) {
-                    completer.complete(webviewcontroller);
-                  }),
-              Container(
-                color: Colors.white,
-                child: Center(child: CircularProgressIndicator()),
-              ),
-            ]),
+            child: WebView(
+                key: key,
+                onPageFinished: doneLoading,
+                onPageStarted: startLoading,
+                javascriptMode: JavascriptMode.unrestricted,
+                initialUrl: widget.blogurl,
+                onWebViewCreated: (WebViewController webviewcontroller) {
+                  completer.complete(webviewcontroller);
+                }),
           ),
         ],
       ),

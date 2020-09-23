@@ -220,7 +220,7 @@ class blogtile extends StatelessWidget {
                     right: 6.0, left: 6.0, bottom: 6.0, top: 2),
                 child: Text(
                   desc,
-                  style: TextStyle(color: Theme.of(context).accentColor),
+                  style: TextStyle(color: Theme.of(context).textSelectionColor),
                 ),
               ),
               Padding(

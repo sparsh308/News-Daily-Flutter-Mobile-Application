@@ -22,7 +22,7 @@ class _MyAppState extends State<MyApp> {
       brightness: Brightness.light,
       primaryColor: Colors.white,
       accentColor: Colors.black,
-      textSelectionColor: Colors.black54,
+      textSelectionColor: Colors.black45,
       backgroundColor: Colors.white);
   @override
   Widget build(BuildContext context) {

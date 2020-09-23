@@ -31,13 +31,11 @@ class _HomeState extends State<Home> {
   fetch() async {
     news obj = new news();
     await obj.getnewsmain();
-    print(newlist);
 
     setState(() {
       newlist = obj.newslist;
     });
     loading = false;
-    print(loading);
   }
 
   @override
@@ -146,7 +144,7 @@ class _HomeState extends State<Home> {
                     icon: Icon(Icons.menu),
                     onPressed: () {
                       BotToast.showText(
-                          text: "Dark Mode Coming Soon",
+                          text: "News Daily Version 1.0",
                           textStyle: TextStyle(
                             fontFamily: 'Montserrat',
                             color: Colors.white,
@@ -357,7 +355,7 @@ class blogtile extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       borderRadius: BorderRadius.circular(12),
-      splashColor: Colors.redAccent,
+      splashColor: Colors.red,
       onTap: () {
         Navigator.push(
             context,
