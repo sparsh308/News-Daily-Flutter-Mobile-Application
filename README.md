@@ -1,6 +1,6 @@
 # NewsDaily  -  Get Latest News Summary Daily
 
-News Daily is Flutter News  Andoroid Application - 
+News Daily is Flutter News Application - 
 
 
 
