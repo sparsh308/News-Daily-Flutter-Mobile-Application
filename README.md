@@ -2,6 +2,8 @@
 
 News Daily is Flutter Andoroid Application 
 
+![untitled-project (1)](https://user-images.githubusercontent.com/47140660/94047282-8050a000-fdef-11ea-84a3-f9a15506d1c6.png)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
