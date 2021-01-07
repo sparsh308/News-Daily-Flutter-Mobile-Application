@@ -4,7 +4,8 @@ News Daily is Flutter News Application -
 
 
 
-<a href=""><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" height=60px /></a>   <a href="https://flutter.dev/"><img alt="flutter logo" src="https://flutter.dev/assets/flutter-lockup-1caf6476beed76adec3c477586da54de6b552b2f42108ec5bc68dc63bae2df75.png" height=55px /></a>
+<a href=""><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" height=60px /></a>   <a href="https://play.google.com/store/apps/details?id=com.Sparsh.NewsApp308">
+<img alt="flutter logo" src="https://flutter.dev/assets/flutter-lockup-1caf6476beed76adec3c477586da54de6b552b2f42108ec5bc68dc63bae2df75.png" height=55px /></a>
 
 
 
